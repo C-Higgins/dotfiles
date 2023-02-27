@@ -33,6 +33,8 @@
 [pull]
 	rebase = true
     ff = only
+[merge]
+    log = true
 [init]
 	defaultBranch = master
 [filter "lfs"]
@@ -42,3 +44,5 @@
 	required = true
 [rebase]
 	autosquash = true
+[help]
+    autocorrect = 1
