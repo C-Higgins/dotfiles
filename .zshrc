@@ -1,7 +1,7 @@
 # To reproduce this config, install starship, lsd,
 
 # aliases
-# alias ls="lsd"
+alias ls="lsd"
 alias ~="cd ~"
 alias ..="cd .."
 alias ...='cd ../..'
@@ -10,7 +10,7 @@ alias -- -='cd -'
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
-#alias lt='ls --tree'
+alias lt='ls --tree'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 
