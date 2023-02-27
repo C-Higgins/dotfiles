@@ -1,0 +1,42 @@
+[core]
+	excludesfile = ~/.gitignore
+[commit]
+	gpgsign = true
+[user]
+	signingkey = 6AD41FBEE7218C82
+	name = Christopher Higgins
+	email = code@chiggins.me
+    # require a config file to be set to do anything
+    useConfigOnly = true
+[gpg]
+	program = /usr/bin/gpg2
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+    rh = reset --hard
+    rs = reset --soft
+	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    # removes local branches that don't exist on remote    
+    prune = fetch --prune
+    uncommit = reset --soft HEAD^1
+    # stash files not added
+    stash-all = stash save --include-untracked
+    pfwl = push --force-with-lease
+[push]
+	default = simple
+    # auto push tags
+    followTags = true
+[pull]
+	rebase = true
+    ff = only
+[init]
+	defaultBranch = master
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[rebase]
+	autosquash = true
