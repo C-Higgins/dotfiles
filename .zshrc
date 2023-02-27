@@ -11,8 +11,11 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 alias lt='ls --tree'
+
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
+# make zsh history work like bash
+alias history="history 1"
 
 . "$HOME/.asdf/asdf.sh"
 
