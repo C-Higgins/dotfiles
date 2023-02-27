@@ -47,6 +47,8 @@ brew install woff2
 brew install ack
 brew install git
 brew install git-lfs
+brew install tldr
+brew install asdf
 
 # Remove outdated versions from the cellar.
 brew cleanup
