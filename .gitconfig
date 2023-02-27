@@ -28,6 +28,8 @@
 	default = simple
     # auto push tags
     followTags = true
+    # auto set up remote branch if no match
+    autoSetupRemote = true
 [pull]
 	rebase = true
     ff = only
