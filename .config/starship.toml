@@ -89,7 +89,11 @@ symbol = "lua "
 symbol = "nodejs "
 
 [memory_usage]
-symbol = "memory "
+symbol = "ram"
+disabled = false
+threshold = 70
+#format = 'using $symbol [${ram}( | ${swap})]($style) '
+format = 'using $symbol [${ram}]($style) '
 
 [meson]
 symbol = "meson "
@@ -146,6 +150,7 @@ Windows = "win "
 
 [package]
 symbol = "pkg "
+disabled = true
 
 [perl]
 symbol = "pl "
@@ -178,7 +183,9 @@ symbol = "scala "
 symbol = "spack "
 
 [sudo]
-symbol = "sudo "
+symbol = "!SUDO! "
+format='[$symbol]($style)'
+disabled = false
 
 [swift]
 symbol = "swift "
