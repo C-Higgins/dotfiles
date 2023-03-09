@@ -37,8 +37,8 @@
     log = true
 [init]
 	defaultBranch = master
-[blame]
-	ignoreRevsFile = true
+#[blame] enable with git 2.40
+#	ignoreRevsFile = .git-blame-ignore-revs
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
